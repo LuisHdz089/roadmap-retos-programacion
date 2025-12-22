@@ -75,3 +75,23 @@ def mi_funcion_fizzbuzz(texto_uno, texto_dos):
 # Ejecución
 total = mi_funcion_fizzbuzz("Fizz", "Buzz")
 print(f"\n--- Se imprimieron números en lugar de texto {total} veces ---")
+
+def fizzbuzz_con_while(texto_uno, texto_dos):
+    contador_numeros = 0
+    contador_ciclo = 1
+    while contador_ciclo <= 100:
+        if contador_ciclo % 3 == 0 and contador_ciclo % 5 == 0:
+            print(texto_uno + texto_dos)
+        elif contador_ciclo % 3 == 0:
+            print(texto_uno)
+        elif contador_ciclo % 5 == 0:
+            print(texto_dos)
+        else:
+            print(contador_ciclo)
+            contador_numeros += 1
+        contador_ciclo += 1
+    return contador_numeros 
+
+total_while = fizzbuzz_con_while("Foo", "Bar")
+print(f"\n--- Se imprimieron números en lugar de texto {total_while} veces ---")
+
