@@ -154,4 +154,9 @@ finally:
 for i in range(10, 56):
     if i % 2 == 0 and i % 3 != 0 and i != 16:
         print(f"Número que cumple las condiciones: {i}")
-         
+
+contador_inicial = 10
+while contador_inicial <= 55:
+    if contador_inicial % 2 == 0 and contador_inicial % 3 != 0 and contador_inicial != 16:
+        print(f"Número que cumple las condiciones: {contador_inicial}")
+    contador_inicial += 1
